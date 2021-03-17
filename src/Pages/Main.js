@@ -39,7 +39,7 @@ class Main extends Component {
     }
 
     componentDidMount () {
-        axios.get("http://localhost:8080/mill")
+        axios.get(process.env.REACT_APP_API_URL + '/mill')
             .then((res) => {
                 this.setState({mills: res.data});
 

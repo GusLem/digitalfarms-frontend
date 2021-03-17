@@ -19,7 +19,7 @@ class AddHarvest extends Component {
         
         if(this.state.millId !== -1)  {
             axios
-            .post('http://localhost:8080/harvest', {
+            .post(process.env.REACT_APP_API_URL + '/harvest', {
                 startDate: this.state.startDate,
                 endDate: this.state.endDate,
                 mill: {

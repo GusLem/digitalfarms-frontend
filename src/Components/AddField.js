@@ -16,7 +16,7 @@ class AddField extends Component {
         
         if(this.state.farmId !== -1)  {
             axios
-            .post('http://localhost:8080/field', {
+            .post(process.env.REACT_APP_API_URL + '/field', {
                 latitude: this.props.position[0],
                 longitude: this.props.position[1],
                 farm: {id: this.state.farmId}

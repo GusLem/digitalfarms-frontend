@@ -13,7 +13,7 @@ class AddMill extends Component {
         
         if(this.state.name) {
             axios
-            .post('http://localhost:8080/mill', {
+            .post(process.env.REACT_APP_API_URL + '/mill', {
                 name: this.state.name
             })
             .then(res => {

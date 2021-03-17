@@ -18,7 +18,7 @@ class AddFarm extends Component {
         
         if(this.state.name && this.state.harvestId !== -1)  {
             axios
-            .post('http://localhost:8080/farm', {
+            .post(process.env.REACT_APP_API_URL + '/farm', {
                 name: this.state.name,
                 harvest: {id: this.state.harvestId}
             })

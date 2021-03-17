@@ -1,9 +1,7 @@
-### To run the Backend:
+### To run the Frontend:
 
-Install modules:
+Build and run the Spring Code
 
-```npm i```
+Access ```/swagger-ui.html``` route for documentaton
 
-Then run the server:
-
-```npm start```
+Access ```/src/test/java/com/challenge/DigitalFarm/resources``` package inside your IDE to see and execute tests
